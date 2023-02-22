@@ -24,6 +24,8 @@ namespace Mouse_Macro
         private const int MOUSEEVENTF_RIGHTUP = 0x10; //마우스 오른쪽 버튼 떼기
 
         System.Timers.Timer timer_time = new System.Timers.Timer(); // timer_time(특정 시간에 작동하는 타이머)할당
+
+        // 재정렬시 사용할 리스트
         List<DataGrid> list = new List<DataGrid>();
 
         public class DataGrid
@@ -43,9 +45,11 @@ namespace Mouse_Macro
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            // datapicker를 날짜와 시간으로 구분
             DP.Value = DateTime.Now;
             TP.Value = DateTime.Now;
 
+            // 테이블은 날짜형이 아닌 스트링으로
             table.Columns.Add("날짜", typeof(string));
             table.Columns.Add("동작시간", typeof(string));
             table.Columns.Add("파일명", typeof(string));
@@ -56,6 +60,7 @@ namespace Mouse_Macro
 
         }
 
+        // 그리드와 입력값 체크
         private bool F_ValueCheck(string tDate, string tTime, string tFile)
         {
             bool bCheck = true;
@@ -143,6 +148,7 @@ namespace Mouse_Macro
 
         private void Btn_order_Click(object sender, EventArgs e)
         {
+            //리스트
             list.Clear();
 
             for (int i = 0; i < dataGridView.Rows.Count; i++)
@@ -154,7 +160,8 @@ namespace Mouse_Macro
                     sFilename = dataGridView.Rows[i].Cells[2].Value.ToString()
                 });
             }
-
+            
+            //linq로 재정렬 후 바인딩
             var query = list.OrderBy(x => x.sDate).ThenBy(x => x.sTime).ToList();
 
             dataGridView.DataSource = query;
