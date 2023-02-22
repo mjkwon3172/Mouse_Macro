@@ -44,6 +44,7 @@
             this.Btn_start = new System.Windows.Forms.Button();
             this.Btn_end = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,7 +85,7 @@
             this.dataGridView.AllowUserToDeleteRows = false;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Location = new System.Drawing.Point(29, 73);
-            this.dataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowTemplate.Height = 30;
@@ -105,7 +106,7 @@
             // dateTimePicker
             // 
             this.dateTimePicker.Location = new System.Drawing.Point(62, 14);
-            this.dateTimePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(141, 21);
             this.dateTimePicker.TabIndex = 5;
@@ -113,7 +114,7 @@
             // Textbox_time
             // 
             this.Textbox_time.Location = new System.Drawing.Point(270, 15);
-            this.Textbox_time.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Textbox_time.Margin = new System.Windows.Forms.Padding(2);
             this.Textbox_time.Mask = "90시90분";
             this.Textbox_time.Name = "Textbox_time";
             this.Textbox_time.Size = new System.Drawing.Size(71, 21);
@@ -123,7 +124,7 @@
             // Textbox_filename
             // 
             this.Textbox_filename.Location = new System.Drawing.Point(398, 13);
-            this.Textbox_filename.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Textbox_filename.Margin = new System.Windows.Forms.Padding(2);
             this.Textbox_filename.Name = "Textbox_filename";
             this.Textbox_filename.Size = new System.Drawing.Size(71, 21);
             this.Textbox_filename.TabIndex = 7;
@@ -131,7 +132,7 @@
             // Textbox_entertime
             // 
             this.Textbox_entertime.Location = new System.Drawing.Point(447, 73);
-            this.Textbox_entertime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Textbox_entertime.Margin = new System.Windows.Forms.Padding(2);
             this.Textbox_entertime.Name = "Textbox_entertime";
             this.Textbox_entertime.Size = new System.Drawing.Size(45, 21);
             this.Textbox_entertime.TabIndex = 8;
@@ -140,7 +141,7 @@
             // Btn_add
             // 
             this.Btn_add.Location = new System.Drawing.Point(29, 47);
-            this.Btn_add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_add.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_add.Name = "Btn_add";
             this.Btn_add.Size = new System.Drawing.Size(59, 21);
             this.Btn_add.TabIndex = 9;
@@ -151,7 +152,7 @@
             // Btn_del
             // 
             this.Btn_del.Location = new System.Drawing.Point(101, 48);
-            this.Btn_del.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_del.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_del.Name = "Btn_del";
             this.Btn_del.Size = new System.Drawing.Size(59, 21);
             this.Btn_del.TabIndex = 10;
@@ -162,7 +163,7 @@
             // Btn_edit
             // 
             this.Btn_edit.Location = new System.Drawing.Point(176, 47);
-            this.Btn_edit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_edit.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_edit.Name = "Btn_edit";
             this.Btn_edit.Size = new System.Drawing.Size(59, 21);
             this.Btn_edit.TabIndex = 11;
@@ -173,7 +174,7 @@
             // Btn_order
             // 
             this.Btn_order.Location = new System.Drawing.Point(248, 47);
-            this.Btn_order.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_order.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_order.Name = "Btn_order";
             this.Btn_order.Size = new System.Drawing.Size(59, 21);
             this.Btn_order.TabIndex = 12;
@@ -184,7 +185,7 @@
             // Btn_start
             // 
             this.Btn_start.Location = new System.Drawing.Point(369, 105);
-            this.Btn_start.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_start.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_start.Name = "Btn_start";
             this.Btn_start.Size = new System.Drawing.Size(59, 21);
             this.Btn_start.TabIndex = 13;
@@ -195,7 +196,7 @@
             // Btn_end
             // 
             this.Btn_end.Location = new System.Drawing.Point(369, 137);
-            this.Btn_end.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_end.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_end.Name = "Btn_end";
             this.Btn_end.Size = new System.Drawing.Size(59, 21);
             this.Btn_end.TabIndex = 14;
@@ -212,11 +213,23 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "마우스 매크로 동작 여부";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(487, 207);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(59, 21);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "GO!";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(548, 229);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Btn_end);
             this.Controls.Add(this.Btn_start);
@@ -233,8 +246,9 @@
             this.Controls.Add(this.Label_filename);
             this.Controls.Add(this.Label_movetime);
             this.Controls.Add(this.Label_date);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mouse Macro";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
@@ -260,6 +274,7 @@
         private System.Windows.Forms.Button Btn_start;
         private System.Windows.Forms.Button Btn_end;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

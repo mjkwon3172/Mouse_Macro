@@ -285,5 +285,11 @@ namespace Mouse_Macro
                 Textbox_filename.Text = row2.Cells[2].Value.ToString();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TimePicker fm = new TimePicker();
+            fm.ShowDialog();
+        }
     }
 }
